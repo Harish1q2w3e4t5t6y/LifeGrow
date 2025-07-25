@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Transparent inner part -->
+    <solid android:color="@android:color/transparent" />
+    <solid android:color="#54FFFFFF" />  <!-- Change color as needed -->
+    <size android:width="64dp" android:height="64dp" />
+    <corners android:radius="32dp" />
+    <!-- Ring border -->
+    <stroke
+        android:width="0.1dp"
+        android:color="#FA000000" />
+
+    <!-- Define size -->
+    <size android:width="64dp" android:height="64dp" />
+</shape>

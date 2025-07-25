@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Top Bar with Close Button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_close"
+                android:contentDescription="Close"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </RelativeLayout>
+
+        <!-- Task Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- Task Name (Read-only) -->
+                <EditText
+                    android:id="@+id/etTaskName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Task Name *"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:padding="8dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_task"
+                    android:drawablePadding="10dp"
+                    android:inputType="textCapSentences"
+                    android:enabled="false"/>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DDDDDD"
+                    android:layout_marginVertical="4dp"/>
+
+                <!-- Description -->
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description (Optional)"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:padding="8dp"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_description"
+                    android:inputType="textCapSentences"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Category and Repeat Spinners -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <!-- Category Spinner -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:layout_marginEnd="6dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <Spinner
+                    android:id="@+id/spinnerCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:popupBackground="#EEEEEE"
+                    android:spinnerMode="dropdown"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Repeat Spinner -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:layout_marginStart="6dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <Spinner
+                    android:id="@+id/spinnerRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:popupBackground="#EEEEEE"
+                    android:spinnerMode="dropdown" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Notification Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Notifications"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginEnd="8dp"/>
+
+            <Switch
+                android:id="@+id/switchNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:trackTint="#CCCCCC"/>
+        </LinearLayout>
+
+        <!-- Notification Time Picker (Initially Hidden) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNotificationTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/etNotificationTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Notification Time"
+                android:textColor="#444444"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:drawableStart="@drawable/ic_notifications_black_24dp"
+                android:drawablePadding="12dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Start DateTime Picker -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStartDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/etStartDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Start Date Time"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:padding="8dp"
+                android:focusable="false"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- End DateTime Picker (Initially Hidden) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEndDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/etEndDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select End Date Time"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:padding="8dp"
+                android:focusable="false"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tag Input -->
+        <EditText
+            android:id="@+id/etTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tag"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:padding="8dp"
+            android:inputType="text"/>
+
+        <!-- Color Selector -->
+
+        <!-- Action Buttons -->
+        <Spinner
+            android:id="@+id/spinnerColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:popupBackground="#EEEEEE"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Update Task"
+                android:layout_weight="1"
+                android:backgroundTint="@color/theme"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delete Task"
+                android:layout_weight="1"
+                android:backgroundTint="@color/theme"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

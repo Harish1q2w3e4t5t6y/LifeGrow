@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Productivity Text (initially hidden) -->
+    <TextView
+        android:id="@+id/productivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productivity"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:alpha="0"
+
+        android:layout_above="@id/toggleBackground" />
+
+    <!-- Toggle Background -->
+    <View
+        android:id="@+id/toggleBackground"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/toggle_background"
+        android:alpha="0.8"
+        android:radius="20dp"/>
+
+
+    <View
+        android:id="@+id/toggleCircle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="170dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/toggle_circle"
+        android:elevation="5dp" />
+
+
+
+
+
+    <!-- Distraction Icons Group -->
+    <RelativeLayout
+        android:id="@+id/distractionIcons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iconYouTube"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/youtube" />
+
+        <ImageView
+            android:id="@+id/iconGaming"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/insta" />
+
+        <ImageView
+            android:id="@+id/iconBingeWatching"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/fackbook" />
+
+        <ImageView
+            android:id="@+id/iconProcrastination"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/fire" />
+        <ImageView
+            android:id="@+id/iconProcrastination1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="570dp"
+            android:src="@drawable/fire" />
+
+        <ImageView
+            android:id="@+id/iconNotifications"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="270dp"
+            android:src="@drawable/shopping" />
+
+        <ImageView
+            android:id="@+id/iconShopping"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="430dp"
+            android:src="@drawable/message" />
+
+        <ImageView
+            android:id="@+id/iconShopping1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="430dp"
+            android:src="@drawable/message" />
+
+        <ImageView
+            android:id="@+id/iconMemes"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="399dp"
+            android:src="@drawable/snapchat" />
+        <ImageView
+            android:id="@+id/iconMemes1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="169dp"
+            android:src="@drawable/snapchat"/>
+
+        <ImageView
+            android:id="@+id/iconPhone"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="390dp"
+            android:src="@drawable/tictoc" />
+
+        <ImageView
+            android:id="@+id/iconMusic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="600dp"
+            android:src="@drawable/scrolling" />
+
+        <ImageView
+            android:id="@+id/iconLaziness"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="640dp"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/iconScrolling"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="670dp"
+            android:src="@drawable/videogame" />
+
+        <ImageView
+            android:id="@+id/iconReddit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/reddit" />
+        <ImageView
+            android:id="@+id/iconReddit1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="690dp"
+            android:src="@drawable/reddit" />
+
+        <ImageView
+            android:id="@+id/iconAddiction"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/addiction" />
+
+        <ImageView
+            android:id="@+id/iconMessages"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/message2" />
+
+        <ImageView
+            android:id="@+id/iconMovies"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="310dp"
+            android:src="@drawable/movie" />
+
+        <ImageView
+            android:id="@+id/iconOrdering"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="550dp"
+            android:src="@drawable/order" />
+
+        <ImageView
+            android:id="@+id/iconWebsiteBrowsing"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="550dp"
+            android:src="@drawable/website" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

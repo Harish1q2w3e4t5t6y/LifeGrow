@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">LifeGrow</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_pomodoro">Pomodoro</string>
+    <string name="title_eisenhower">Eisenhower</string>
+    <string name="title_kanban">Kanban</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_settings">Setttings</string>
+    <string name="title_addtask">AddTask</string>
+    <string name="title_others">Others</string>
+    <string name="title_more">More</string>
+    <string-array name="repeat_options_array">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Monthly</item>
+    </string-array>
+    <string-array name="quadrants_array">
+        <item>Urgent Important</item>
+        <item>Not Urgent Important</item>
+        <item>Urgent Unimportant</item>
+        <item>Not Urgent Unimportant</item>
+    </string-array>
+    <string-array name="color_array">
+        <item>nocolor</item>
+        <item>blue</item>
+        <item>red</item>
+        <item>yellow</item>
+        <item>green</item>
+    </string-array>
+</resources>

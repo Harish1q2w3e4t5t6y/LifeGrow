@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_pomodoro">
+
+    <fragment
+        android:id="@+id/navigation_pomodoro"
+        android:name="com.example.lifegrow.ui.pomodoro.PomodoroFragment"
+        android:label="@string/title_pomodoro"
+        tools:layout="@layout/fragment_pomodoro" />
+
+    <fragment
+        android:id="@+id/navigation_eisenhower"
+        android:name="com.example.lifegrow.ui.eisenhower.EisenhowerFragment"
+        android:label="@string/title_eisenhower"
+        tools:layout="@layout/fragment_eisenhower" />
+
+    <fragment
+        android:id="@+id/navigation_kanban"
+        android:name="com.example.lifegrow.ui.kanban.KanbanFragment"
+        android:label="@string/title_kanban"
+        tools:layout="@layout/fragment_kanban" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.lifegrow.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_others"
+        android:name="com.example.lifegrow.ui.others.OtherFragment"
+        android:label="@string/title_more"
+        tools:layout="@layout/fragment_other" />
+</navigation>

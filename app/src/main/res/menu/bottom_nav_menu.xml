@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_pomodoro"
+        android:icon="@drawable/ic_pomodora"
+        android:title="@string/title_pomodoro"/>
+
+    <item
+        android:id="@+id/navigation_eisenhower"
+        android:icon="@drawable/ic_eisenhower"
+        android:title="@string/title_eisenhower" />
+
+    <item
+        android:id="@+id/navigation_kanban"
+        android:icon="@drawable/ic_kanban"
+        android:title="@string/title_kanban" />
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/title_calendar" />
+
+    <item
+        android:id="@+id/navigation_others"
+        android:icon="@drawable/ic_more"
+        android:title="@string/title_more" />
+
+</menu>

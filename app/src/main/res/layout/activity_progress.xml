@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Header Title -->
+        <TextView
+            android:id="@+id/progressHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress Dashboard"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Overall Task Completion Circle -->
+        <com.example.lifegrow.ui.others.progress.TaskCompletionCircleView
+            android:id="@+id/taskCompletionCircle"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/progressHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Task Completion Text -->
+        <TextView
+            android:id="@+id/taskCompletionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed: 0, Pending: 0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/taskCompletionCircle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Pomodoro Count Graph -->
+        <com.example.lifegrow.ui.others.progress.BarGraphView
+            android:id="@+id/pomodoroGraph"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/taskCompletionText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Pomodoro Text -->
+        <TextView
+            android:id="@+id/pomodoroCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomodoros Completed: 0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/pomodoroGraph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Eisenhower Matrix Visualization -->
+        <com.example.lifegrow.ui.others.progress.EisenhowerView
+            android:id="@+id/eisenhowerView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/pomodoroCountText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

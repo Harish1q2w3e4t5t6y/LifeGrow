@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/correct"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/correct"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LifeGrow"
+        tools:targetApi="31">
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Core Activities -->
+        <activity android:name=".Login" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".Register" android:exported="true" />
+        <activity android:name=".AddTask" android:exported="true" />
+
+        <!-- Social Media Blocker UI -->
+        <activity android:name=".ui.others.SocialMediaBlockerActivity" android:exported="true" />
+        <activity android:name=".ui.others.AIExtensionBlockerActivity" android:exported="true" />
+        <activity android:name=".ui.others.progress.ProgressActivity" android:exported="true" />
+
+        <!-- Accessibility Service -->
+        <service
+            android:name=".ui.others.AppBlockerAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- Block Overlay Service -->
+        <service
+            android:name=".ui.others.BlockOverlayService"
+            android:exported="false"
+            android:enabled="true" />
+
+        <!-- Receivers -->
+        <receiver android:name=".notification.ToastReceiver"
+            android:exported="true"/>
+        <receiver android:name=".notification.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

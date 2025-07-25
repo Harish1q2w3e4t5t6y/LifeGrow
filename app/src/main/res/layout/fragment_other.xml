@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.others.OtherFragment">
+
+    <LinearLayout
+        android:id="@+id/otherContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <!-- Profile Block -->
+
+        <!-- Social Media Blocker -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#E6E6E6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_mask"
+                android:clipToOutline="true"
+                android:contentDescription="Profile picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dp" />
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/socialMediaBlocker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📵 Social Media Blocker"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="#FADCE1"
+            android:layout_marginBottom="12dp" />
+
+        <!-- AI Extension Blocker -->
+        <TextView
+            android:id="@+id/aiExtensionBlocker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧠 AI Extension Blocker"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="#C8E6C9"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Progress Module -->
+        <TextView
+            android:id="@+id/progressModule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📈 Progress Tracker"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="#FFF9C4"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Settings Block -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#D4E9FA"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚙️ Settings"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="12dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔔 Notification Settings"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/privacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔒 Privacy Policy"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/termsConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📄 Terms  Conditions"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/contactSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📬 Contact Support"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="@color/theme"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

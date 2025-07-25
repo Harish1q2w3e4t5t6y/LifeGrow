@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme">#FA001C66</color>
+
+
+    <color name="default_nav_color">#FFFFFF</color>
+    <color name="default_status_color">#E4EFF8</color>
+
+    <!-- Primary Colors -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="accent">#03DAC5</color>
+    <color name="bg_gradient">#1E1E2E</color>
+
+
+    <!-- Background Colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="light_gray">#E0E0E0</color>
+
+    <!-- Card Colors -->
+    <color name="card_background">#F5F5F5</color>
+    <color name="card_shadow">#BDBDBD</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="hint_text">#BDBDBD</color>
+
+    <!-- Divider Color -->
+    <color name="divider">#D1D1D1</color>
+
+    <!-- Button Colors -->
+    <color name="button_background">#6200EE</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="deep_blue">#0D1B2A</color>
+    <color name="gold">#FFD700</color>
+    <color name="gold_light">#FFF5CC</color>
+    <color name="gold_transparent">#FFD70080</color>
+    <color name="green">#FFD70080</color>
+    <color name="red">#FFD70080</color>
+
+    <color name="taskColor">#818181</color>
+
+</resources>
