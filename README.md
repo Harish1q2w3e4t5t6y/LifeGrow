@@ -4,6 +4,8 @@ LifeGrow is a personal productivity app I built as part of my MCA final year pro
 
 Modules and What I Implemented
 
+![Uploading WIN_20221127_22_02_59_Pro.jpg…]()
+
 1. Authentication
 - Firebase Authentication for login and signup
 - Basic form validation and error handling
