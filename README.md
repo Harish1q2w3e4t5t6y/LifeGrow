@@ -8,7 +8,9 @@ Modules and What I Implemented
 1. Authentication
 - Firebase Authentication for login and signup
 - Basic form validation and error handling
-![Screenshot_20250420-182834_LifeGrow](https://github.com/user-attachments/assets/72d87743-e716-46cd-af49-55a3a7b68e19)
+ <h3>Pomodoro Timer Output</h3>
+<img src="https://github.com/user-attachments/assets/72d87743-e716-46cd-af49-55a3a7b68e19" width="400"/>
+
 
 2. Pomodoro Timer
 - 25/5 timer cycle
