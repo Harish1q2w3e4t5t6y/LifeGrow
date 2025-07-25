@@ -9,7 +9,7 @@ Modules and What I Implemented
 - Firebase Authentication for login and signup
 - Basic form validation and error handling
  <h3>Pomodoro Timer Output</h3>
-<img src="https://github.com/user-attachments/assets/72d87743-e716-46cd-af49-55a3a7b68e19" width="400"/>
+<img src="https://github.com/user-attachments/assets/72d87743-e716-46cd-af49-55a3a7b68e19" width="100"/>
 
 
 2. Pomodoro Timer
