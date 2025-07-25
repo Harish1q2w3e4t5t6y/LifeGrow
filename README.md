@@ -8,8 +8,9 @@ Modules and What I Implemented
 1. Authentication
 - Firebase Authentication for login and signup
 - Basic form validation and error handling
-<img src="https://github.com/user-attachments/assets/ef6a15f0-e91e-42e1-bbc2-91d2181f19a3" width="100"/>
-
+<img src="https://github.com/user-attachments/assets/24472504-9bf1-4c0d-9067-644a54371331" width="200"/>
+<img src="https://github.com/user-attachments/assets/ef6a15f0-e91e-42e1-bbc2-91d2181f19a3" width="200"/>
+ 
 
 2. Pomodoro Timer
 - 25/5 timer cycle
@@ -52,12 +53,14 @@ Modules and What I Implemented
 - Takes plain text like “Call at 3 PM tomorrow in personal”
 - Extracts task name, time, and category using rule-based logic
 - Prefills the AddTask screen
-<img src="(https://github.com/user-attachments/assets/ef6a15f0-e91e-42e1-bbc2-91d2181f19a3" width="100"/>
-
+<img src="https://github.com/user-attachments/assets/34941fc0-9387-4456-9501-30ccf61e716c" width="100"/>
+<img src="https://github.com/user-attachments/assets/a03958cb-ce73-48b0-a44a-6a1ee15d3c60" width="100"/>
+ 
 8. Reports
 - Custom charts for task completion rate, pomodoro usage, etc.
 - Breakdown of task types and focus streaks
 - All data comes from Firestore
- <img src="(https://github.com/user-attachments/assets/ef6a15f0-e91e-42e1-bbc2-91d2181f19a3" width="100"/>
-
+ <img src="https://github.com/user-attachments/assets/c02726aa-e92a-4517-a0bd-18e886aaec31" width="100"/>
+<img src="https://github.com/user-attachments/assets/9d9fb3c0-ac20-49ee-b88a-75f547ea9411" width="100"/>
+ 
 
