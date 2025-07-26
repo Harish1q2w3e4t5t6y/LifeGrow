@@ -3,10 +3,9 @@
 LifeGrow is a personal productivity app I developed as part of my MCA final year project. It combines various productivity techniques into one Android application to help users manage tasks, focus better, and avoid distractions.
 
 ## 📽️ LifeGrow App Demo
-
-Here's a short video demonstration of the LifeGrow productivity app in action.
-<video src="https://github.com/user-attachments/assets/1620e442-272d-43ce-8ac7-49dba0a12f6f.mp4" width="400" controls></video>  
+<video src="https://github.com/user-attachments/assets/29f7f3fd-7770-4a52-aeb8-0e148146ab1b.mp4" width="400" controls></video>  
 ---
+ 
 
 ## 🧩 Modules and What I Implemented
 
